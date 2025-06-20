@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Vibrant color palette
+:root {
+  --primary: #ff4081;
+  --secondary: #7c3aed;
+  --accent: #00e1d2;
+  --background-gradient: linear-gradient(135deg, #7c3aed 0%, #ff4081 100%);
+  --surface: #fff;
+  --text-main: #222;
+  --text-light: #fff;
+  --shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background-gradient);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,36 @@
+.projects {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.projects h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+.project {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #f9f9f9cc;
+  box-shadow: 0 1px 6px rgba(124,58,237,0.07);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  transition: transform 0.2s, box-shadow 0.2s, border-image 0.2s;
+}
+.project:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 32px rgba(255,64,129,0.13);
+  border-image: linear-gradient(90deg, var(--primary), var(--accent)) 1;
+}
+.project h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.project ul {
+  margin: 0 0 0 1.5rem;
+  color: #444;
+} 

@@ -1,0 +1,96 @@
+.hero {
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+  max-width: 700px;
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(255,64,129,0.18);
+  border-image: linear-gradient(90deg, var(--primary), var(--accent)) 1;
+}
+.hero h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+  letter-spacing: 1px;
+}
+.hero h2 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .location {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.hero .contact {
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+.hero .summary {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem auto 2rem auto;
+  max-width: 900px;
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-flex:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(255,64,129,0.18);
+  border-image: linear-gradient(90deg, var(--primary), var(--accent)) 1;
+}
+.hero-image {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(124,58,237,0.13);
+  border: 4px solid var(--primary);
+  background: #fff;
+}
+.hero-card {
+  flex: 1;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .hero-flex {
+    flex-direction: column;
+    padding: 1.5rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .hero-image img {
+    width: 150px;
+    height: 180px;
+  }
+  .hero-card {
+    text-align: center;
+  }
+} 

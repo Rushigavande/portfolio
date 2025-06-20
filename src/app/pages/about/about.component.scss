@@ -1,0 +1,33 @@
+.about {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  transition: transform 0.2s, box-shadow 0.2s, border-image 0.2s;
+}
+.about:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 32px rgba(124,58,237,0.13);
+  border-image: linear-gradient(90deg, var(--secondary), var(--primary)) 1;
+}
+.about h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.about h3 {
+  color: var(--secondary);
+  margin-top: 1.5rem;
+}
+.about ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+}
+.about li {
+  margin-bottom: 0.5rem;
+  color: #444;
+} 
